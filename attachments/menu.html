@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" href="../images/items/main_icon.png">
+    <link rel="stylesheet" href="../attachments/index.css">
+    <!-- bs-latest vr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- bs_icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Lato|Bodoni+Moda|Playfair+Display">
+</head>
+
+<body>
+    <!-- container begins -->
+    <div class="conatainer py-5 bg-danger">
+        <!-- logo-content begins-->
+        <div class="row py-5 text-center">
+            <div class="col-6  text-end">
+                <img src="../images/sub_logo.png" class="rounded-5" width="100px" alt="">
+            </div>
+            <div class="col-6 text-start pt-3">
+                <div class="fs-2 fw-bold text-white">Welcome To Kaimanam</div>
+            </div>
+        </div>
+        <!-- logo-content ends -->
+
+        <!-- input begis -->
+        <div class="row text-center py-4">
+            <h2>Menu</h2>
+            <label class="fs-5" for="totalPersons">Total Persons:
+                <input class="m-auto fs-6 rounded-1 bg-light mx-2 px-1" type="text" id="totalPersons"
+                    name="totalPersons" placeholder="Enter number of persons" style="width: 200px;" maxlength="3">
+            </label>
+        </div>
+        <!-- input ends -->
+
+        <!-- selection begins -->
+        <div class="row py-5 ">
+            <div class="col d-flex justify-content-center">
+                <button class="px-3 fw-semibold py-2 rounded-pill border-danger bg-white text-danger"
+                    data-bs-target="#foodCarousel" data-bs-slide-to="0">Breakfast</button>
+                <button class="px-3 fw-semibold py-2 rounded-pill border-danger bg-white text-danger"
+                    data-bs-target="#foodCarousel" data-bs-slide-to="1">Lunch</button>
+                <button class="px-3 fw-semibold py-2 rounded-pill border-danger bg-white text-danger"
+                    data-bs-target="#foodCarousel" data-bs-slide-to="2">Snack</button>
+                <button class="px-3 fw-semibold py-2 rounded-pill border-danger bg-white text-danger"
+                    data-bs-target="#foodCarousel" data-bs-slide-to="3">Dinner</button>
+            </div>
+        </div>
+        <!-- selection ends -->
+
+        <!-- food carousel begins -->
+        <div class="row py-5">
+            <div class="carousel slide" id="foodCarousel">
+                <div class="carousel-inner">
+                    <!-- breakfast -->
+                    <div class="carousel-item active">
+                        <h4 class="text-center fw-semibold">Breakfast Items</h4>
+                        <div class="container">
+                            <div class="row pb-5">
+                                <div class="col">
+                                    <div class="item1 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Vada.avif" class="img-fluid" alt="vada">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹10</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Vada', 10)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item2 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Idli.avif" class="img-fluid" alt="idili">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item3">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Dosa.avif" class="img-fluid" alt="dosa">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹20</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Dosa', 20)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item4 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/pongal.avif" class="img-fluid" alt="pongal">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Pongal', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Podi-Dosa.png" class="img-fluid" alt="Podi-Dosa">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted pb-4">Podi-Dosa</div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text pb-2">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Podi-Dosa', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="item1 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Appam.avif" class="img-fluid" alt="vada">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹10</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Vada', 10)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item2 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Uttapam.avif" class="img-fluid" alt="idili">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item3">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Idiyappam.avif" class="img-fluid" alt="dosa">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹20</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Dosa', 20)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item4 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Chapathi.png" class="img-fluid" alt="pongal">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-6 text-muted pb-4">Chapathi</div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text pb-2">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Pongal', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/puri.png" class="img-fluid" alt="pongal">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted">Puri</div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Puri', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- space to display the selected items -->
+                            <div class="cart py-5 text-center">
+                                <h2 class="fw-semibold">Food Cart</h2>
+                                <ul id="cart-items" class="d-flex justify-content-between align-items-center border-3">
+                                    <!-- Cart items will be displayed here -->
+                                </ul>
+                                <p class="fs-5">Total: <span id="cart-total">₹0.00</span></p>
+                            </div>
+                            <!-- space ends -->
+
+                            <!-- submit button-->
+                            <div class="text-center">
+                                <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                    type="button">Submit</button>
+                            </div>
+                            <!-- submit button ends -->
+                        </div>
+                    </div>
+                    <!-- lunch -->
+                    <div class="carousel-item">
+                        <h4 class="text-center fw-semibold">Lunch Items</h4>
+                        <div class="container">
+                            <div class="row pb-5">
+                                <div class="col">
+                                    <div class="item1 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/meals.png" class="img-fluid" alt="meals">
+                                            <div class="card-body pt-4 m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted pb-4">Meals</div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text pb-3">Price: ₹10</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Vada', 10)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item2 ">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Variety-rice.png" class="img-fluid"
+                                                alt="Variety-rice">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted pb-4">Variety-Rice
+                                                </div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="item3 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/veg-briyani.png" class="img-fluid"
+                                                alt="veg-briyani">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted pb-4">Veg-Briyani
+                                                </div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹20</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Dosa', 20)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item4">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/mushroom-briyani.png" class="img-fluid"
+                                                alt="mushroom-briyani">
+                                            <div class="card-body pt-4 m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted">Mushroom-Biriyani
+                                                </div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text pb-1">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Pongal', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- space to display the selected items -->
+                            <div class="cart py-5 text-center">
+                                <h2 class="fw-semibold">Food Cart</h2>
+                                <ul id="cart-items" class="d-flex justify-content-between align-items-center border-3">
+                                    <!-- Cart items will be displayed here -->
+                                </ul>
+                                <p class="fs-5">Total: <span id="cart-total">₹0.00</span></p>
+                            </div>
+                            <!-- space ends -->
+
+                            <!-- submit button-->
+                            <div class="text-center">
+                                <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                    type="button">Submit</button>
+                            </div>
+                            <!-- submit button ends -->
+                        </div>
+                    </div>
+                    <!-- snack -->
+                    <div class="carousel-item">
+                        <h4 class="text-center fw-semibold">Snack Items</h4>
+                        <div class="container">
+                            <div class="row pb-5">
+                                <div class="col">
+                                    <div class="item1 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/carousel_images/car-11.png" class="img-fluid"
+                                                alt="meals">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted pb-4">Samosa</div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹10</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Vada', 10)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item2">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/carousel_images/car-15.png" class="img-fluid"
+                                                alt="Variety-rice">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted pb-4">Cutlet</div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item3 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/carousel_images/car-10.png" class="img-fluid"
+                                                alt="Variety-rice">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted ">Banana-Bajji</div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="item4 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/carousel_images/car-12.png" class="img-fluid"
+                                                alt="veg-briyani">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted pb-4">Onion-Bajji
+                                                </div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text pb-2">Price: ₹20</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Dosa', 20)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/carousel_images/car-13.png" class="img-fluid"
+                                                alt="mushroom-briyani">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted pb-4">Potato-Bajji
+                                                </div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text pb-2">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Pongal', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item6 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/carousel_images/car-14.png" class="img-fluid"
+                                                alt="Variety-rice">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-5 text-muted pb-4">Masal Vada
+                                                </div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text pb-2">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- space to display the selected items -->
+                            <div class="cart py-5 text-center">
+                                <h2 class="fw-semibold">Food Cart</h2>
+                                <ul id="cart-items" class="d-flex justify-content-between align-items-center border-3">
+                                    <!-- Cart items will be displayed here -->
+                                </ul>
+                                <p class="fs-5">Total: <span id="cart-total">₹0.00</span></p>
+                            </div>
+                            <!-- space ends -->
+
+                            <!-- submit button-->
+                            <div class="text-center">
+                                <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                    type="button">Submit</button>
+                            </div>
+                            <!-- submit button ends -->
+                        </div>
+                    </div>
+                    <!-- dinner -->
+                    <div class="carousel-item">
+                        <h4 class="text-center fw-semibold">Dinner Items</h4>
+                        <div class="container">
+                            <div class="row pb-5">
+                                <div class="col">
+                                    <div class="item1 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Idli.avif" class="img-fluid" alt="Idili">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Idili', 10)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item2">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Dosa.avif" class="img-fluid" alt="Dosa">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item3 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/pongal.avif" class="img-fluid" alt="pongal">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item4">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Idiyappam.avif" class="img-fluid" alt="Idiyappam">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text pb-2">Price: ₹20</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Dosa', 20)">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item4 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Chapathi.png" class="img-fluid" alt="pongal">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-6 text-muted pb-4">Chapathi</div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text pb-2">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Chapathi', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="item6 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/mini-idili.png" class="img-fluid"
+                                                alt="mini-idili">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-6 text-muted pb-4">Mini-Idili
+                                                </div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Mini-Idili', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item7">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Podi-Dosa.png" class="img-fluid" alt="Podi-Dosa">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold fs-6 text-muted pb-4">Podi-Dosa</div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text pb-2">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Podi-Dosa', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item8 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Parotta.avif" class="img-fluid" alt="porotta">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Porotta', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item9">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/mushroom-dosa.png" class="img-fluid"
+                                                alt="mushroom-dosa">
+                                            <div class="card-body m-auto">
+                                                <div class="card-title fw-semibold  text-muted">Mushroom-Dosa
+                                                </div>
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Mushroom-dosa', 12)">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="item10 py-5">
+                                        <div class="card mx-auto" style="width: 9rem;">
+                                            <img src="../images/items/Uttapam.avif" class="img-fluid" alt="Uttapam">
+                                            <div class="card-body m-auto">
+                                                <div class="card-subtitle text-muted">per item</div>
+                                                <p class="card-text">Price: ₹12</p>
+                                            </div>
+                                            <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                                type="button" onclick="addItem('Uttapam', 12)">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- space to display the selected items -->
+                            <div class="cart py-5 text-center">
+                                <h2 class="fw-semibold">Food Cart</h2>
+                                <ul id="cart-items" class="d-flex justify-content-between align-items-center border-3">
+                                    <!-- Cart items will be displayed here -->
+                                </ul>
+                                <p class="fs-5">Total: <span id="cart-total">₹0.00</span></p>
+                            </div>
+                            <!-- space ends -->
+
+                            <!-- submit button-->
+                            <div class="text-center">
+                                <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
+                                    type="button">Submit</button>
+                            </div>
+                            <!-- submit button ends -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- food carousel ends -->
+    </div>
+</body>
+
+</html>
