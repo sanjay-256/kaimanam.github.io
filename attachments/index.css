@@ -9,9 +9,8 @@
 {
     background: url(../images/main_bg.jpg)no-repeat;
     background-size: cover;
-    height: 70vh;
-    background-position: 50% 50%;
-    width: 100%;
+    min-height: 70vh;
+    background-position:center;
 }
 
 .main h1 
@@ -24,15 +23,13 @@
     background: url(../images/login.png)no-repeat;
     background-size: cover;
     height: 100vh;
-    background-position: 50% 50%;
+    background-position:center;
     
 }
 
-.img1{
+.img1
+{
     margin-left: 50px;
 }
 
-.bgcolor    
-{
-    background-color: rgba(255, 255, 255, 0.8);
-}
+
