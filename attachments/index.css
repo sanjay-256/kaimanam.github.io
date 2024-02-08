@@ -32,4 +32,12 @@
     margin-left: 50px;
 }
 
+.menu-img
+{
+    background: url(../images/bg-best.png) no-repeat;
+    background-size:50vh;
+    background-position:center;
+}
+
+
 
