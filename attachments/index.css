@@ -39,5 +39,13 @@
     background-position:center;
 }
 
+.menu-bg
+{
+    background: url(../images/menu-bg.jpg) no-repeat;
+     
+    background-size:cover;
+    /* background-position:center;  */
+    background-attachment:fixed;
+}
 
 
