@@ -36,19 +36,26 @@
                                 <img src="../images/main_logo.png" width="90px" class="img-fluid d-inline" alt="logo">
                                 <div class="fs-3 fw-semibold text-danger d-inline pb-3">Login</div>
                                 <div class="py-2">
-                                    <input type="text" class="rounded-4 border-danger p-2 px-5 text-center m-1 bg-danger-subtle" placeholder="User_Name">
+                                    <input id="username" type="text"
+                                        class="rounded-4 border-danger p-2 px-5 text-center m-1 bg-danger-subtle"
+                                        placeholder="User_Name">
                                     <i class="bi bi-person-fill fs-5 text-danger"></i>
                                 </div>
                                 <div class="py-2">
-                                    <input type="email" class="rounded-4 border-danger p-2 px-5 text-center m-1 bg-danger-subtle" placeholder="@ E-mail">
+                                    <input id="email" type="email"
+                                        class="rounded-4 border-danger p-2 px-5 text-center m-1 bg-danger-subtle"
+                                        placeholder="@ E-mail">
                                     <i class="bi bi-envelope-at-fill fs-5 text-danger"></i>
                                 </div>
                                 <div class="py-2">
-                                    <input type="password" class="rounded-4 border-danger p-2 px-5 text-center m-1 bg-danger-subtle" placeholder="Phone_number">
+                                    <input id="phone" type="text" inputmode="numeric"
+                                        class="rounded-4 border-danger p-2 px-5 text-center m-1 bg-danger-subtle"
+                                        placeholder="Phone_number" maxlength="10">
                                     <i class="bi bi-telephone-fill fs-5 text-danger"></i>
                                 </div>
                                 <div class="py-2">
-                                    <a href="../index.html" class="btn bg-danger text-white fs-5 border-danger border-3 rounded-pill">Submit</a>
+                                    <button id="loginBtn"
+                                        class="btn bg-danger text-white fs-5 border-danger border-3 rounded-pill">Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -57,6 +64,49 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // JavaScript code for phone number input validation
+        document.getElementById("phone").addEventListener("input", function() {
+            // Remove any non-numeric characters
+            this.value = this.value.replace(/\D/g, '');
+
+            // Limit the length to 10 characters
+            if (this.value.length > 10) {
+                this.value = this.value.slice(0, 10);
+            }
+        });
+
+        // JavaScript code for login button click event
+        document.getElementById("loginBtn").addEventListener("click", function () {
+            // Fetch user input values
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            // Check if any field is empty
+            if (username === "" || email === "" || phone === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            // Regular expression for email format validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Check if email format is valid
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            // Dummy authentication logic (replace with your actual authentication process)
+            // Here, we'll just display an alert with the user's input
+            alert("Login Successful!\n\nUsername: " + username + "\nEmail: " + email + "\nPhone: " + phone);
+
+            // Redirect or perform further actions after successful login
+            window.location.href = "../index.html"; // Example of redirecting to a dashboard page
+        });
+    </script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinner</title>
+    <title>Login</title>
     <link rel="icon" href="../images/sub_logo.png">
     <link rel="stylesheet" href="index.css">
     <!-- bs-latest vr -->
@@ -40,11 +40,6 @@
                             <div class="card-body m-auto">
                                 <div class="card-subtitle text-muted">per item</div>
                                 <p class="card-text">Price: ₹12</p>
-                                <p class="card-text">Quantity:<span id="itemQuantity">1</span></p>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center">
-                                <button class="btn btn-md btn-primary px-3" onclick="decreaseQuantity()">-</button>
-                                <button class="btn btn-md btn-primary px-3" onclick="increaseQuantity()">+</button>
                             </div>
                             <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
                                 type="button" onclick="addItem('Idili', 10)">Add to Cart</button>
@@ -56,11 +51,6 @@
                             <div class="card-body m-auto">
                                 <div class="card-subtitle text-muted">per item</div>
                                 <p class="card-text">Price: ₹12</p>
-                                <p class="card-text">Quantity:<span id="itemQuantity">1</span></p>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center">
-                                <button class="btn btn-md btn-primary px-3" onclick="decreaseQuantity()">-</button>
-                                <button class="btn btn-md btn-primary px-3" onclick="increaseQuantity()">+</button>
                             </div>
                             <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
                                 type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
@@ -68,15 +58,10 @@
                     </div>
                     <div class="item3 py-5">
                         <div class="card mx-auto" style="width: 9rem;">
-                            <img src="../images/items/pongal.avif" class="img-fluid" alt="pongal">
+                            <img src="../images/items/pongal.avif" class="img-fluid pb-1" alt="pongal">
                             <div class="card-body m-auto">
                                 <div class="card-subtitle text-muted">per item</div>
                                 <p class="card-text">Price: ₹12</p>
-                                <p class="card-text">Quantity:<span id="itemQuantity">1</span></p>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center">
-                                <button class="btn btn-md btn-primary px-3" onclick="decreaseQuantity()">-</button>
-                                <button class="btn btn-md btn-primary px-3" onclick="increaseQuantity()">+</button>
                             </div>
                             <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
                                 type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
@@ -89,11 +74,6 @@
                             <div class="card-body m-auto">
                                 <div class="card-subtitle text-muted">per item</div>
                                 <p class="card-text pb-2">Price: ₹20</p>
-                                <p class="card-text">Quantity:<span id="itemQuantity">1</span></p>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center">
-                                <button class="btn btn-md btn-primary px-3" onclick="decreaseQuantity()">-</button>
-                                <button class="btn btn-md btn-primary px-3" onclick="increaseQuantity()">+</button>
                             </div>
                             <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
                                 type="button" onclick="addItem('Dosa', 20)">Add to Cart</button>
@@ -106,12 +86,7 @@
                             <div class="card-body m-auto">
                                 <div class="card-title fw-semibold fs-6 text-muted pb-4">Chapathi</div>
                                 <div class="card-subtitle text-muted">per item</div>
-                                <p class="card-text pb-2">Price: ₹12</p>
-                                <p class="card-text">Quantity:<span id="itemQuantity">1</span></p>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center pb-1">
-                                <button class="btn btn-md btn-primary px-3" onclick="decreaseQuantity()">-</button>
-                                <button class="btn btn-md btn-primary px-3" onclick="increaseQuantity()">+</button>
+                                <p class="card-text pb-3">Price: ₹12</p>
                             </div>
                             <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
                                 type="button" onclick="addItem('Chapathi', 12)">Add to Cart</button>
@@ -128,11 +103,6 @@
                                 </div>
                                 <div class="card-subtitle text-muted">per item</div>
                                 <p class="card-text">Price: ₹12</p>
-                                <p class="card-text">Quantity:<span id="itemQuantity">1</span></p>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center">
-                                <button class="btn btn-md btn-primary px-3" onclick="decreaseQuantity()">-</button>
-                                <button class="btn btn-md btn-primary px-3" onclick="increaseQuantity()">+</button>
                             </div>
                             <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
                                 type="button" onclick="addItem('Mini-Idili', 12)">Add to Cart</button>
@@ -145,11 +115,6 @@
                                 <div class="card-title fw-semibold fs-6 text-muted pb-4">Podi-Dosa</div>
                                 <div class="card-subtitle text-muted">per item</div>
                                 <p class="card-text pb-2">Price: ₹12</p>
-                                <p class="card-text">Quantity:<span id="itemQuantity">1</span></p>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center pb-1">
-                                <button class="btn btn-md btn-primary px-3" onclick="decreaseQuantity()">-</button>
-                                <button class="btn btn-md btn-primary px-3" onclick="increaseQuantity()">+</button>
                             </div>
                             <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
                                 type="button" onclick="addItem('Podi-Dosa', 12)">Add to Cart</button>
@@ -161,11 +126,6 @@
                             <div class="card-body m-auto">
                                 <div class="card-subtitle text-muted">per item</div>
                                 <p class="card-text">Price: ₹12</p>
-                                <p class="card-text">Quantity:<span id="itemQuantity">1</span></p>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center">
-                                <button class="btn btn-md btn-primary px-3" onclick="decreaseQuantity()">-</button>
-                                <button class="btn btn-md btn-primary px-3" onclick="increaseQuantity()">+</button>
                             </div>
                             <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
                                 type="button" onclick="addItem('Porotta', 12)">Add to Cart</button>
@@ -180,11 +140,6 @@
                                 </div>
                                 <div class="card-subtitle text-muted">per item</div>
                                 <p class="card-text">Price: ₹12</p>
-                                <p class="card-text">Quantity:<span id="itemQuantity">1</span></p>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center">
-                                <button class="btn btn-md btn-primary px-3" onclick="decreaseQuantity()">-</button>
-                                <button class="btn btn-md btn-primary px-3" onclick="increaseQuantity()">+</button>
                             </div>
                             <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
                                 type="button" onclick="addItem('Mushroom-dosa', 12)">Add to
@@ -197,11 +152,6 @@
                             <div class="card-body m-auto">
                                 <div class="card-subtitle text-muted">per item</div>
                                 <p class="card-text">Price: ₹12</p>
-                                <p class="card-text">Quantity:<span id="itemQuantity">1</span></p>
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center">
-                                <button class="btn btn-md btn-primary px-3" onclick="decreaseQuantity()">-</button>
-                                <button class="btn btn-md btn-primary px-3" onclick="increaseQuantity()">+</button>
                             </div>
                             <button class="bg-danger-subtle border-danger rounded-3 mx-3 p-1 my-2"
                                 type="button" onclick="addItem('Uttapam', 12)">Add to Cart</button>
@@ -209,24 +159,28 @@
                     </div>
                 </div>
             </div>
-            <!-- space to display the selected items -->
-            <div class="cart py-5 text-center">
-                <h2 class="fw-semibold text-white">Food Cart</h2>
-                <ul id="cart-items" class="d-flex justify-content-between align-items-center border-3">
-                    <!-- Cart items will be displayed here -->
-                </ul>
-                <p class="fs-5">Total: <span id="cart-total">₹0.00</span></p>
+              <!-- space to display the selected items -->
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="cart py-5 text-center border border-5 rounded-5 w-100 ">
+                    <h2 class="fw-semibold fs-3 pb-2 text-white">Food Cart</h2>
+                    <ul id="cart-items" class="list-unstyled">
+                        <!-- Cart items will be displayed here -->
+                    </ul>
+                    <p class="fs-5 fw-semibold">Total: <span id="cart-total" class="fw-semibold text-white">₹0</span></p>
+                </div>
             </div>
+
             <!-- space ends -->
 
             <!-- submit button-->
-            <div class="text-center pb-5">
-                <button class="bg-danger-subtle border-danger rounded-3 p-1"
-                    type="button">Submit</button>
+            <div class="text-center py-5">
+                <button id="submit-btn" class="bg-danger-subtle border-danger rounded-3 p-2" type="button">Submit</button>
             </div>
             <!-- submit button ends -->
         </div>
     </div>
+    
+<script src="./menu.js"></script>
 </body>
 
 </html>

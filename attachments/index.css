@@ -47,5 +47,39 @@
     /* background-position:center;  */
     background-attachment:fixed;
 }
+/* ----------------------------------------------------------------- */
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+/* Styling for the shopping cart */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5px 5px 5px;
+    border: 3px solid #ddd;
+    margin: 0px 10px 10px 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.cart-item button {
+    background-color: white;
+    font-weight:700;
+    color: black;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #f8d7da;
+    border: 2px solid red;
+}
